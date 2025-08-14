@@ -34,7 +34,13 @@ Code:
 
 */
 
-const rows: Array<{ sku: string }> = [{sku:'A'}, {sku:'A'}, {sku:'B'}]; // Example input 
+const rows: Array<{ sku: string }> = [{sku:'A'}, {sku:'A'}, {sku:'B'}]; 
+
+/*
+The code above defines a constant 'rows` that holds an array of objects. Each object has a property 'sku` which is a string
+the `Array<{ sku: string }>` type annotation specifies that 'rows' is an array of objects, where each object has a 'sku' property of type string.
+
+*/
 
 export function uniqueSkus(rows: Array<{ sku: string }>): string[] {
     const uniqueSkuSet = new Set<string>(); // Set to track unique SKUs
